@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans Bold", cursive;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+/**** Calculator body ****/
+h3 {
+  height: 50px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+#zero {
+  grid-column: span 2;
+}
+
+.AC {
+  grid-column: span 2;
+}
+
+/**** Footer ****/
+footer,
+.github {
+  display: flex;
+  gap: 8px;
+}
+
+footer {
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-github {
+  color: black;
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+.fab {
+  font-weight: 400;
+  font-family: "Font Awesome 5 Brands";
+}
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
