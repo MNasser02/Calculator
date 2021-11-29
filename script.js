@@ -30,8 +30,12 @@ function displayNum(e) {
   //reject input size greater than 11 chars
   if (display.textContent.length > 11) return;
 
-  //display input digit
+  //store input digit or point
   let numValue = e.target.textContent;
+  
+  //take only 2 digits after decimal point
+  if (display.textContent.split(".")[1].length >= 2) return;
+  
   display.textContent += numValue;
 }
 
