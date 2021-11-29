@@ -34,7 +34,7 @@ function displayNum(e) {
   let numValue = e.target.textContent;
   
   //take only 2 digits after decimal point
-  if (display.textContent.split(".")[1].length >= 2) return;
+  //if (display.textContent.split(".")[1].length >= 2) return;
   
   display.textContent += numValue;
 }
