@@ -12,14 +12,15 @@ body {
   height: 100vh;
   justify-content: space-between;
   padding: 16px;
+  align-items: center;
 }
 
 /**** Header ****/
 h1 {
-  font-size: 54px;
+  font-size: 50px;
   font-weight: bold;
   border: 4px dashed rgb(112, 112, 182);
-  padding: 16px;
+  padding: 8px 16px;
   color: rgb(172, 22, 84);
 }
 
@@ -31,7 +32,8 @@ main {
   border-radius: 12px;
 }
 h3 {
-  height: 90px;
+  height: 110px;
+  line-height: 110px;
   padding: 6px;
   font-size: 46px;
   text-align: right;
@@ -40,6 +42,7 @@ h3 {
   border-radius: 12px;
   margin-bottom: 6px;
   color: rgb(172, 22, 84);
+  width: 350px;
 }
 
 .buttons {
@@ -47,7 +50,7 @@ h3 {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
   height: 350px;
-  width: 300px;
+  width: 350px;
   gap: 4px;
 }
 
@@ -70,10 +73,6 @@ button:active {
 }
 
 #zero {
-  grid-column: span 2;
-}
-
-.AC {
   grid-column: span 2;
 }
 
