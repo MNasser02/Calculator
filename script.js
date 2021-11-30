@@ -32,10 +32,10 @@ function displayNum(e) {
 
   //store input digit or point
   let numValue = e.target.textContent;
-  
+
   //take only 2 digits after decimal point
   //if (display.textContent.split(".")[1].length >= 2) return;
-  
+
   display.textContent += numValue;
 }
 
@@ -104,6 +104,7 @@ function evaluate() {
   num2 = display.textContent;
   operate(operator, operator);
   operator = "";
+  clear = true;
 }
 
 AC.addEventListener("click", allClear);
